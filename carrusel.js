@@ -6,14 +6,11 @@ let imagenes = [
                {ruta: './imageness/img5.jpg', alt: 'Imagen 5'},
                 ];
 
-    console.log("arreglo de imagenes", imagenes);
 
 let indice = 0;
-   console.log("Valor de índice:", indice);
+   
 
 const img = document.getElementById("imagen");
-   console.log("elemento img", img);
-
 const botonSiguiente = document.getElementById("siguiente");
 
 function siguiente() {
@@ -32,12 +29,11 @@ function anterior() {
         indice--;
     }
     propiedades(indice);
-    console.log("elemento img", img);
 }
 function propiedades(indiceNuevo){
 img.src = imagenes[indiceNuevo].ruta;
 img.alt = imagenes[indiceNuevo].alt;
- console.log("Valor de la imagen actual:", indiceNuevo);
+ 
     
 }
 

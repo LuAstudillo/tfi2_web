@@ -78,6 +78,7 @@ body{
     border: 1px solid black;
     max-width: 480px;
     min-height: 100px;
+    padding: 15px;
 }
   .hotelcard p {
     flex-grow:1;
@@ -95,3 +96,9 @@ body{
     border-bottom: 3px solid rgba(112, 84, 169,0.5);
 
 }
+footer{
+    background-color:rgba(112, 84, 169,0.5);
+    text-align: center;
+    padding: 20px;
+}
+
