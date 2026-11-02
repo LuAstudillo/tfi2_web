@@ -17,4 +17,40 @@
             <a href="pag3.html">Contacto</a>
         </div>
     </nav>
+    <h1> Contacto</h1>
+    <p>Podés contactarnos si tenes dudas sobre tu reserva o sugerencias</p>
+    <form action="" name="formContacto" onsubmit="validarForm(event)" novalidate>
+        <div class="formulario">
+        <h3>Tus datos:</h3>
+        <div>
+            <label for="fname">Ingrese Nombre</label>
+            <input type="text" name="name" id="fname"  value="">
+            <span id="errorName" class="error"></span>
+        </div>
+        <div>
+            <label for="fcorreo">Ingrese su correo</label>
+            <input type="text" name="correo" id="fcorreo"><br>
+            <span id="errorCorreo" class="error"></span>
+        </div>
+        <div>
+            <label for="ftelefono">Ingrese su teléfono</label>
+            <input type="tel" name="telefono" id="ftelefono"><br>
+            <span id="errorTelefono" class="error"></span>
+        </div>
+        <div>
+            <label for="fmensaje"> Ingrese su sugerencia, o dudas sobre la reserva</label>
+            <input type="text" name="mensaje" id="fmensaje">
+            <span id="errorMensaje" class="error"></span>
+        </div>
+        <button type="submit">Enviar</button>
+    </form>
+</div>
+    
+    <div id="formResumen" class="resumen"></div> 
+
+    <footer>
+        <p>©2026 Busca Hoteles Ya - TFI</p>
+    </footer>
+    <script src="./js/formulario.js"></script>
+</body>
 </html>
