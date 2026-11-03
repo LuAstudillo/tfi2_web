@@ -70,7 +70,7 @@
             return;
         }
         
-        console.log("llegue a la parte del resumen")
+       
 const resumen = document.createElement("div");
 const formResumen = document.getElementById("formResumen");
 formResumen.textContent = "";

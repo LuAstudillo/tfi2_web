@@ -12,42 +12,51 @@
     <nav>
         <div class="logo"> Busca Hoteles Ya</div>
         <div class="enlaces">
-            <a href="pag1.html">Inicio</a>
+            <a href="index.html">Inicio</a>
             <a href="pag2.html">Acerca de los Hoteles</a>
             <a href="pag3.html">Contacto</a>
         </div>
     </nav>
+    <main>
     <h1> Contacto</h1>
-    <p>Podés contactarnos si tenes dudas sobre tu reserva o sugerencias</p>
+    <p>Podés contactarnos si tenes dudas sobre tu reserva o sugerencias.</p>
     <form action="" name="formContacto" onsubmit="validarForm(event)" novalidate>
         <div class="formulario">
-        <h3>Tus datos:</h3>
-        <div>
-            <label for="fname">Ingrese Nombre</label>
+        
+        <section>
+            <h2>Tus datos:</h2>
+        <div class="campo">
+            <label for="fname">Ingrese su nombre</label>
             <input type="text" name="name" id="fname"  value="">
             <span id="errorName" class="error"></span>
         </div>
-        <div>
-            <label for="fcorreo">Ingrese su correo</label>
+        <div class="campo">
+            <label for="fcorreo">Ingrese su correo electrónico</label>
             <input type="text" name="correo" id="fcorreo"><br>
             <span id="errorCorreo" class="error"></span>
         </div>
-        <div>
-            <label for="ftelefono">Ingrese su teléfono</label>
+        <div class="campo">
+            <label for="ftelefono">Ingrese su número teléfono</label>
             <input type="tel" name="telefono" id="ftelefono"><br>
             <span id="errorTelefono" class="error"></span>
         </div>
-        <div>
+        <div class="campo">
             <label for="fmensaje"> Ingrese su sugerencia, o dudas sobre la reserva</label>
             <input type="text" name="mensaje" id="fmensaje">
             <span id="errorMensaje" class="error"></span>
+        
+        
         </div>
-        <button type="submit">Enviar</button>
+        <br>
+        <div class="button">
+        <button type="submit" >Enviar</button>
+        </div>
+        </section>
     </form>
 </div>
     
     <div id="formResumen" class="resumen"></div> 
-
+</main>
     <footer>
         <p>©2026 Busca Hoteles Ya - TFI</p>
     </footer>

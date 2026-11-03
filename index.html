@@ -9,17 +9,19 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
     </head>
-    <body>
+    <header>
+        <header>
     <nav>
         <div class="logo"> Busca Hoteles Ya</div>
         <div class="enlaces">
-            <a href="pag1.html" id="activa">Inicio</a>
+            <a href="index.html" id="activa">Inicio</a>
             <a href="pag2.html" id="activa">Acerca de los Hoteles</a>
             <a href="pag3.html">Contacto</a>
         </div>
     </nav>
-   
-
+</header>
+    
+<main>
     <div class="titulo"></div>
     <h1> Planeá tus vacaciones aquí</h1>
      
@@ -27,16 +29,17 @@
         Aquí puedes encontrar distintos planes, precios y destinos para comparar. </p>
 
     
-    <div class="carrusel">
+    <section class="carrusel">
         <h2> Hospedajes Destacados</h2>
         <img id="imagen" src="./imageness/img1.jpg" alt="Imagen 1" width="500px" height="400px">
-      <div class="botones">
+      <div class="button">
         <button id="anterior" onclick="anterior()"> Anterior </button>
         <button id="siguiente" onclick="siguiente()"> Siguiente </button>
     
     <script src="./js/carrusel.js"></script>
     </div>
-    </div>
+    </section>
+</main>
     <footer>
         <p>©2026 Busca Hoteles Ya - TFI</p>
     </footer>

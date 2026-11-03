@@ -35,14 +35,11 @@ color: rgba(130,0,0,1);
 font-style: italic;
 }
 
-h1, h2{
-    text-align: left;
-    margin-left: 40px;
-    margin-top: 25px;
-}
-p{
-    font-size: 18px;
-    margin-left:40px;
+main {
+  flex: 1;
+  padding: 10px 40px;
+
+
 }
 body{
     font-family: 'Inter', sans-serif;
@@ -57,13 +54,10 @@ body{
     gap: 10px;
     padding: 30px;
     background-color: rgba(111, 133, 222,0.1);
-            
+    max-width: 100%;
+    height: auto;
  }
- .botones {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
- }
+ 
   #boton {
    
     background-color:rgba(112, 84, 169,0.3);
@@ -81,8 +75,10 @@ body{
     flex-direction: column;
     border: 1px solid black;
     max-width: 480px;
-    min-height: 100px;
+    min-height: 180px;
+     width: 33.33%;
     padding: 15px;
+    box-sizing: border-box;
 }
   .hotelcard p {
     flex-grow:1;
@@ -92,6 +88,7 @@ body{
     display: flex;
     gap: 20px;
     padding: 20px;
+    justify-content: space-between;
 }
 .subtitulodestino{
     display: flex;
@@ -107,7 +104,7 @@ body{
 }
 footer{
     background-color:rgba(112, 84, 169,0.5);
-   padding: 20px;
+    padding: 20px;
     text-align: center;
     margin-top: auto;
     
@@ -118,16 +115,39 @@ footer{
 .formulario{
     padding: 30px;
 }
-
 .resumen{
-    background-color: rgba(60, 179, 113,0.5);
-    font-size: 11px;
-    padding: 15px;
-    margin: 30px;
-   width: 350px;
+    background-color: rgba(60, 179, 113,0.3);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px 0;
+    max-width: 350px;
    display: none;
-   
+}
 
-   
+.resumen h2 {
+  margin-top: 0;
+}
+p{
+    margin:5px;
+    font-size: 18px;
+}
+button{
+ padding: 8px 15px;
+ font-size: 1rem;
+ background-color:rgba(168, 109, 187, 0.3);
+}
+.campo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.campo label {
+    width: 280px;
+}
+
+.campo input {
+    width: 250px;
+    box-sizing: border-box;
 }
 
