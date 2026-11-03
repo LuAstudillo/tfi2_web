@@ -1,9 +1,9 @@
 let imagenes = [
-               {ruta: './imageness/img1.jpg', alt: 'Imagen 1'},
-               {ruta: './imageness/img2.jpg', alt: 'Imagen 2'},
-               {ruta: './imageness/img3.jpg', alt: 'Imagen 3'},
-               {ruta: './imageness/img4.jpg', alt: 'Imagen 4'},
-               {ruta: './imageness/img5.jpg', alt: 'Imagen 5'},
+               {ruta: './Imagenes/img1.jpg', alt: 'Img hotel 5 estrellas'},
+               {ruta: './Imagenes/img2.jpg', alt: 'Img hotel 4 estrellas'},
+               {ruta: './Imagenes/img3.jpg', alt: 'Img hotel 4 estrellas'},
+               {ruta: './Imagenes/img4.jpg', alt: 'Img hotel 3 estrellas'},
+               {ruta: './Imagenes/img5.jpg', alt: 'Img hotel 3 estrellas'},
                 ];
 
 
@@ -11,6 +11,7 @@ let indice = 0;
    
 
 const img = document.getElementById("imagen");
+const contador = document.getElementById("contador");
 const botonSiguiente = document.getElementById("siguiente");
 
 function siguiente() {
@@ -20,6 +21,7 @@ function siguiente() {
         indice++;
     }
     propiedades(indice);
+    
 }
 
 function anterior() {
@@ -33,7 +35,9 @@ function anterior() {
 function propiedades(indiceNuevo){
 img.src = imagenes[indiceNuevo].ruta;
 img.alt = imagenes[indiceNuevo].alt;
- 
-    
+contador.textContent = "Foto " + (indiceNuevo + 1) + " de " + imagenes.length;
 }
+propiedades(indice);
+    
+
 

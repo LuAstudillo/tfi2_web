@@ -13,8 +13,8 @@
         <div class="logo"> Busca Hoteles Ya</div>
         <div class="enlaces">
             <a href="index.html">Inicio</a>
-            <a href="pag2.html">Acerca de los Hoteles</a>
-            <a href="pag3.html">Contacto</a>
+            <a href="listahoteles.html">Acerca de los Hoteles</a>
+            <a href="contacto.html" class="activa">Contacto</a>
         </div>
     </nav>
     <main>
@@ -26,22 +26,22 @@
         <section>
             <h2>Tus datos:</h2>
         <div class="campo">
-            <label for="fname">Ingrese su nombre</label>
+            <label for="fname">Ingrese su nombre<span class="obligatorio">*</span></label>
             <input type="text" name="name" id="fname"  value="">
             <span id="errorName" class="error"></span>
         </div>
         <div class="campo">
-            <label for="fcorreo">Ingrese su correo electrónico</label>
+            <label for="fcorreo">Ingrese su correo electrónico<span class="obligatorio">*</span></label>
             <input type="text" name="correo" id="fcorreo"><br>
             <span id="errorCorreo" class="error"></span>
         </div>
         <div class="campo">
-            <label for="ftelefono">Ingrese su número teléfono</label>
+            <label for="ftelefono">Ingrese su número teléfono<span class="obligatorio">*</span></label>
             <input type="tel" name="telefono" id="ftelefono"><br>
             <span id="errorTelefono" class="error"></span>
         </div>
         <div class="campo">
-            <label for="fmensaje"> Ingrese su sugerencia, o dudas sobre la reserva</label>
+            <label for="fmensaje"> Ingrese su sugerencia, o dudas sobre la reserva<span class="obligatorio">*</span></label>
             <input type="text" name="mensaje" id="fmensaje">
             <span id="errorMensaje" class="error"></span>
         
