@@ -1,8 +1,8 @@
 let imagenes = [
                {ruta: './Imagenes/img1.jpg', alt: 'Img hotel 5 estrellas'},
                {ruta: './Imagenes/img2.jpg', alt: 'Img hotel 4 estrellas'},
-               {ruta: './Imagenes/img3.jpg', alt: 'Img hotel 4 estrellas'},
-               {ruta: './Imagenes/img4.jpg', alt: 'Img hotel 3 estrellas'},
+               {ruta: './Imagenes/img3.jpg', alt: 'Img hotel 5 estrellas'},
+               {ruta: './Imagenes/img4.jpg', alt: 'Img hotel 4 estrellas'},
                {ruta: './Imagenes/img5.jpg', alt: 'Img hotel 3 estrellas'},
                 ];
 
