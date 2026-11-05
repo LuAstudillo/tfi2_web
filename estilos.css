@@ -159,4 +159,25 @@ button{
 .obligatorio{
     color: red;
 }
+  
+@media (max-width: 600px) {
+  .hotelcontenedor {
+    flex-direction: column;
+  }
+
+  .hotelcard {
+    width: 100%;
+    max-width: none;
+  }
+
+    .campo{
+    flex-direction: column;
+  }
+    .campo label{
+    width: 100%;
+  }
+    .campo input{
+        width: 98%;
+    }
+}
 
