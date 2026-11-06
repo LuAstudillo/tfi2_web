@@ -85,6 +85,11 @@ main {
     padding: 15px;
     box-sizing: border-box;
 }
+.hotelcard img{
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
   .hotelcard p {
     flex-grow:1;
 
